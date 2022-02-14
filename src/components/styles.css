@@ -90,6 +90,8 @@
     display: flex;
     flex-direction: row;
     margin-left: 5px;
+    width: 100%;
+    border: 2px dot-dash royalblue;
 }
 .about-me {
     padding-left: 100px;
