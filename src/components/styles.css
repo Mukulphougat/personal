@@ -90,8 +90,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 5px;
-    width: 100%;
-    border: 2px dot-dash royalblue;
+    /*border: 2px dot-dash royalblue;*/
 }
 .about-me {
     padding-left: 100px;
@@ -165,6 +164,8 @@ progress::-webkit-progress-value {
     }
     .about-container {
         flex-direction: column;
+        padding-left: unset;
+
     }
     .about-me > p {
         width: 330px;
