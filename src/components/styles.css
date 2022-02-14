@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+.header > span {
+    padding-left: 5px;
+    font-size: 2rem;
+    color: darkcyan;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.header > a {
+    padding-right: 15px;
+    padding-top: 15px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.header > span:hover {
+    color: black;
+}
+
+.photo-brief {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+}
+.photo-brief > span {
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .12em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end);
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 510px }
+}
+
+
+.photo-container {
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 5px solid cornflowerblue;
+}
+.photo-container {
+    background-image: url("../images/profile.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-name {
+    position: relative;
+    margin-left: 150px;
+}
+.background {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    bottom: 0;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #c6afaf;
+    opacity: 0.4;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.little {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+
+.about-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.about-me {
+    padding-left: 100px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.about-me > span {
+    margin-left: 50px;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.about-me > p {
+    margin-left: 50px;
+}
+.para-graph {
+    width: 500px;
+}
+.skills {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    padding-left: 10px;
+}
+.skills > span {
+    margin-left: 50px;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.skills > div {
+    margin-left: 50px;
+}
+.lab {
+    font-size: 30px;
+}
+progress {
+    border-radius: 8px;
+    width: 180px;
+    height: 20px;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: lightblue;
+    border-radius: 2px;
+}
+progress::-webkit-progress-value {
+    background-color: blue;
+    border-radius: 2px;
+}
+@media only screen and ( max-width: 600px ) {
+    .photo-brief {
+        flex-direction: column;
+    }
+    .photo-brief > span {
+        align-self: center;
+        padding-top: 25px;
+        font-size: 2rem;
+    }
+    .photo-container {
+        align-self: center;
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+    }
+    .background {
+        display: none;
+    }
+    .about-name {
+        margin-left: 50px;
+        padding-bottom: unset;
+    }
+    .little {
+        font-size: 35px;
+        margin-left: unset;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .about-me > p {
+        width: 330px;
+        font-size: 1.5rem;
+    }
+    .about-me {
+        padding-left: unset;
+    }
+    .skills {
+        padding-left: unset;
+    }
+    .about-me > span {
+        font-size: 2rem;
+    }
+    .skills > span {
+        font-size: 2rem;
+    }
+    .lab {
+        font-size: 2rem;
+    }
+}
