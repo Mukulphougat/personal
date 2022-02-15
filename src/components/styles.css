@@ -146,14 +146,17 @@ progress::-webkit-progress-value {
     }
     .photo-brief > span {
         align-self: center;
-        padding-top: 25px;
+        padding-top: 5px;
+        padding-bottom: 15px;
         font-size: 2rem;
+        animation: none;
     }
     .photo-container {
         align-self: center;
         width: 250px;
         height: 250px;
         border-radius: 125px;
+        transform: none;
     }
     .background {
         display: none;
@@ -163,24 +166,31 @@ progress::-webkit-progress-value {
         padding-bottom: unset;
     }
     .little {
+        margin-top: 30px;
         font-size: 35px;
         margin-left: unset;
     }
     .about-container {
+        margin-top: 100px;
+        transform: translateX(-10px);
         flex-direction: column;
-        padding-left: unset;
-
-    }
-    .about-me > p {
-        width: 80%;
-        font-size: 1.5rem;
+        width: 100%;
     }
     .about-me {
         padding-left: unset;
+        width: 100%;
+    }
+    .about-me > p {
+        /*width: 80%;*/
+        font-size: 1.5rem;
+        width: 80%;
     }
     .skills {
-        padding-left: unset;
+        padding: unset;
+        width: 100%;
     }
+
+
     .about-me > span {
         font-size: 2rem;
     }
@@ -188,6 +198,12 @@ progress::-webkit-progress-value {
         font-size: 2rem;
     }
     .lab {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+    progress {
+        width: 250px;
+        height: 20px;
     }
 }
