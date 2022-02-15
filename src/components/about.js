@@ -11,7 +11,7 @@ function About() {
             </div>
             <div class="skills">
                 <span>My Skills</span>
-                <div>
+                <div class="skill-container">
                     <label class="lab">Frontend </label>
                     <p></p>
                     <progress value="60" max="100"></progress>

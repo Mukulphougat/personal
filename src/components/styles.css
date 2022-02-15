@@ -5,13 +5,15 @@
     justify-content: space-between;
     width: 100%;
 }
-.header > span {
+
+.resume {
+    text-decoration: none;
     padding-left: 5px;
     font-size: 2rem;
     color: darkcyan;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
-.header > a {
+.email {
     padding-right: 15px;
     padding-top: 15px;
     color: red;
@@ -52,7 +54,7 @@
     /*margin-left: 50px;*/
     width: 290px;
     height: 290px;
-    transform: translateX(-80px);
+    /*transform: translateX(-80px);*/
     border-radius: 150px;
     border: 5px solid cornflowerblue;
 }
@@ -129,7 +131,7 @@
 }
 progress {
     border-radius: 8px;
-    width: 180px;
+    width: 280px;
     height: 20px;
 }
 progress[value]::-webkit-progress-bar {
@@ -140,7 +142,84 @@ progress::-webkit-progress-value {
     background-color: blue;
     border-radius: 2px;
 }
-@media only screen and ( max-width: 600px ) {
+
+.techs > span {
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    margin-left: 150px;
+}
+.techs-container {
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.techs-container > div {
+    height: 40px;
+}
+
+.techs-container > div:hover {
+    background-color: ghostwhite;
+}
+.techs-container > div > span {
+    border: 2px dot-dash black;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 2rem;
+}
+
+.education {
+    margin-top: 25px;
+    position: relative;
+    margin-left: 150px;
+}
+.edu {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.education-background {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #c6afaf;
+    opacity: 0.4;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.edu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.college {
+    width: 80%;
+    margin-top: 150px;
+    padding-left: 150px;
+}
+.degree {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.college-name {
+    font-size: 1rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.duration {
+    font-size: 1rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+@media only screen and ( max-width: 500px ) {
     .photo-brief {
         flex-direction: column;
     }
@@ -162,7 +241,7 @@ progress::-webkit-progress-value {
         display: none;
     }
     .about-name {
-        margin-left: 50px;
+        margin-left: 10px;
         padding-bottom: unset;
     }
     .little {
@@ -183,27 +262,65 @@ progress::-webkit-progress-value {
     .about-me > p {
         /*width: 80%;*/
         font-size: 1.5rem;
-        width: 80%;
+        width: 95%;
     }
     .skills {
-        padding: unset;
+        margin-left: 0px;
         width: 100%;
     }
 
-
     .about-me > span {
+        margin-left: 10px;
         font-size: 2rem;
     }
+    .about-me > p {
+        margin-left: 10px;
+    }
+
     .skills > span {
+        margin-left: 10px;
         font-size: 2rem;
+    }
+    .skill-container {
+        transform: translateX(-25px);
     }
     .lab {
         font-size: 1.5rem;
         font-weight: bold;
-
     }
     progress {
         width: 250px;
         height: 20px;
     }
+    .techs {
+        margin-top: 20px;
+        flex-direction: row;
+    }
+    .techs > span {
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+
+    .techs-container {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .techs-container > div > span {
+        font-size: 1.5rem;
+    }
+    .education {
+        margin-left: 10px;
+    }
+    .edu {
+        font-size: 3rem;
+    }
+    .education-background {
+        display: none;
+    }
+    .college {
+        margin-top: 90px;
+        padding-left: 10px;
+    }
+
 }
